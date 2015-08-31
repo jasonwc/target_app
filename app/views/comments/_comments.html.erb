@@ -1,0 +1,6 @@
+<h1>Comments(<%= comments.count %>)</h1>
+<div class='comments'>
+  <% comments.each do |comment| %>
+    <%= render 'comments/comment', comment: comment %>
+  <% end %>
+</div>
